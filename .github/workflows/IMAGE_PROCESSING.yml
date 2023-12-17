@@ -1,8 +1,13 @@
 name: Load image files to s3 and image data to ImagesCollection
 
-on: 
-  schedule: 
-    - cron: 0 22 */5 * *
+# on: 
+#   schedule: 
+#     - cron: 0 22 */5 * *
+
+on:
+  push:
+    branches:
+      - main
 
 jobs: 
   run-script:
