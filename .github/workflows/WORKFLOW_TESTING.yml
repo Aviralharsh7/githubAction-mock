@@ -5,6 +5,8 @@ on:
     workflows: Image processing
     types: 
       - completed
+    
+  workflow_dispatch:
 
 jobs: 
   test:
