@@ -1,4 +1,4 @@
-name: Load image files to s3 and image data to ImagesCollection
+name: Image processing
 
 # on: 
 #   schedule: 

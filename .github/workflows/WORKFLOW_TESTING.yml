@@ -2,7 +2,7 @@ name: Testing Workflows
 
 on: 
   workflow_run: 
-    workflows: IMAGE_PROCESSING.yml
+    workflows: Image processing
     types: 
       - completed
 
