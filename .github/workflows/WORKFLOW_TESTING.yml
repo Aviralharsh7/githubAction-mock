@@ -24,6 +24,11 @@ jobs:
     - name: Install dependencies
       run: npm install 
 
+    - name: Trigger Image Processing Workflow
+      uses: actions/workflow-dispatch@v2
+      with:
+        workflow: IMAGE_PROCESSING.yml 
+
     - name: Check if workflow succeeded 
       run: |
         echo "Workflow Status: ${{ github.event.workflow_run.conclusion }}"
