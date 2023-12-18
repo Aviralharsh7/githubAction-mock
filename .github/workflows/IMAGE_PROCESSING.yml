@@ -33,7 +33,7 @@ jobs:
         run: |
           GITHUB_ACTOR_EMAIL=$(curl -s -H "Authorization: Bearer $GITHUB_TOKEN" \
           https://api.github.com/users/$GITHUB_ACTOR/emails | \
-          jq -r '.[0].email')
+          jq -r '.["0"].email')
           echo "GITHUB_ACTOR_EMAIL=$GITHUB_ACTOR_EMAIL" >> $GITHUB_ENV
 
       - name: Commit and push changes 
