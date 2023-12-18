@@ -25,7 +25,7 @@ jobs:
       run: npm install 
 
     - name: Trigger Image Processing Workflow
-      uses: actions/workflow-dispatch@v2
+      uses: benc-uk/workflow-dispatch@v1
       with:
         workflow: IMAGE_PROCESSING.yml 
 
