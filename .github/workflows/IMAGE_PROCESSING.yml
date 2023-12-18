@@ -45,6 +45,7 @@ jobs:
           echo "Fetched github email: $GITHUB_ACTOR_EMAIL"
           echo "GITHUB_ACTOR_EMAIL=$GITHUB_ACTOR_EMAIL" >> $GITHUB_ENV
 
+          
       - name: Commit and push changes 
         run: |
           git config --local user.email "$GITHUB_ACTOR_EMAIL"
